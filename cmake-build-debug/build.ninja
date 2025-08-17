@@ -145,6 +145,41 @@ build DSA_arr2.exe: C_EXECUTABLE_LINKER__DSA_arr2_Debug CMakeFiles/DSA_arr2.dir/
   TARGET_IMPLIB = libDSA_arr2.dll.a
   TARGET_PDB = DSA_arr2.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target DSA_arr3
+
+
+#############################################
+# Order-only phony target for DSA_arr3
+
+build cmake_object_order_depends_target_DSA_arr3: phony || .
+
+build CMakeFiles/DSA_arr3.dir/day_1/arrays-3.c.obj: C_COMPILER__DSA_arr3_unscanned_Debug C$:/Users/deniz/CLionProjects/DSA/day$ 1/arrays-3.c || cmake_object_order_depends_target_DSA_arr3
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\DSA_arr3.dir\day_1\arrays-3.c.obj.d
+  FLAGS = -g -std=gnu99 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\DSA_arr3.dir
+  OBJECT_FILE_DIR = CMakeFiles\DSA_arr3.dir\day_1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target DSA_arr3
+
+
+#############################################
+# Link the executable DSA_arr3.exe
+
+build DSA_arr3.exe: C_EXECUTABLE_LINKER__DSA_arr3_Debug CMakeFiles/DSA_arr3.dir/day_1/arrays-3.c.obj
+  CONFIG = Debug
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\DSA_arr3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = DSA_arr3.exe
+  TARGET_IMPLIB = libDSA_arr3.dll.a
+  TARGET_PDB = DSA_arr3.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -177,6 +212,8 @@ build DSA_arr1: phony DSA_arr1.exe
 
 build DSA_arr2: phony DSA_arr2.exe
 
+build DSA_arr3: phony DSA_arr3.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -185,7 +222,7 @@ build DSA_arr2: phony DSA_arr2.exe
 #############################################
 # Folder: C:/Users/deniz/CLionProjects/DSA/cmake-build-debug
 
-build all: phony DSA.exe DSA_arr1.exe DSA_arr2.exe
+build all: phony DSA.exe DSA_arr1.exe DSA_arr2.exe DSA_arr3.exe
 
 # =============================================================================
 # Built-in targets
