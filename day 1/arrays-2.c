@@ -2,26 +2,21 @@
 // Created by deniz on 17.08.2025.
 //
 
-//Task A: Write a C program that finds an element in an unsorted array of numbers. First create
-//an array of 10 elements and initialize it with integer random numbers in your program.
-//Then ask user to enter a number and search this number in the array you have
-//created. Display a message to the user indicating whether the number is in the array
-//or not.
+//Task B: Modify your program in part (a) such that the user enters the numbers that will be
+//populated to the array.
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 int main(void) {
     int guess = 0;
 
-    srand(time(NULL)); // Setting the seed
-
     int numbers[10]; // Declaration of an array
 
     for (int i = 0; i < 10; i++) { // Main loop for insert random numbers.
-          int randNum = rand() & 100 + 1;
-          numbers[i] = randNum;
+        int tempNum = 0;
+        printf("Enter number %d to populate: ", i+1);
+        scanf("%d", &tempNum);
+        numbers[i] = tempNum;
     }
 
     printf("Enter a number to search: ");
@@ -34,7 +29,7 @@ int main(void) {
             isCorrect = 1;
         }
         i++;
-      }
+    }
     while(isCorrect == 0 && i < 10);
 
 
